@@ -40,6 +40,23 @@ function addVoteToQuestion(slenzie, index, value){
     return "Vote registered succesfully";
 }
 
-function questionAnswered{
-    
+function questionAnswered(slenzie, index){
+if(index < 0 || index >= slenzie.questions.length){
+    return "Question not found.";
 }
+slenzie.questions[index].answered = true;
+return "question marked as answered";
+}
+
+function unansweredQuestions(slenzie){
+    const output = [];
+
+    slenzie.questions.forEach((question, index)) => {
+        if (!question.answered){
+            output.push({idex, ...question});
+        }
+        return output;
+    }
+};
+
+
