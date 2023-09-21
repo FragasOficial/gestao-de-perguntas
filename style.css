@@ -1,0 +1,16 @@
+body{
+    font-family: monospace;
+    font-size: 20px;
+    color: rgb(77, 122, 9);
+    background-color: azure;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main{
+    background-color: white;
+    margin: 30px auto;
+    width: 800px;
+    height: 900px;
+}
